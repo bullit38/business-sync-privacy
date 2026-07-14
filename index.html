@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Règles de confidentialité — Business Sync &amp; Comptabilité</title>
+<meta name="description" content="Politique de confidentialité de l'application Android Business Sync & Comptabilité.">
+<style>
+  :root {
+    --ink: #1c2733;
+    --ink-soft: #4a5a6a;
+    --paper: #fafbfc;
+    --card: #ffffff;
+    --accent: #1a6fb5;
+    --accent-soft: #e8f1f9;
+    --line: #e3e8ee;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Segoe UI", Roboto, -apple-system, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.65;
+    font-size: 16.5px;
+  }
+  header {
+    background: linear-gradient(135deg, #10293f 0%, #1a6fb5 100%);
+    color: #fff;
+    padding: 3.5rem 1.5rem 3rem;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    font-weight: 650;
+    letter-spacing: -0.02em;
+  }
+  header p {
+    margin-top: 0.6rem;
+    opacity: 0.85;
+    font-size: 1rem;
+  }
+  main {
+    max-width: 760px;
+    margin: -1.8rem auto 0;
+    padding: 0 1.25rem 4rem;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 2rem 2.2rem;
+    margin-bottom: 1.4rem;
+    box-shadow: 0 1px 3px rgba(16, 41, 63, 0.06);
+  }
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 650;
+    color: var(--accent);
+    margin-bottom: 0.7rem;
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+  }
+  h2 .n {
+    background: var(--accent-soft);
+    color: var(--accent);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    padding: 0.1rem 0.55rem;
+    font-variant-numeric: tabular-nums;
+  }
+  p + p { margin-top: 0.7rem; }
+  ul { margin: 0.6rem 0 0.2rem 1.2rem; }
+  li { margin-bottom: 0.35rem; }
+  li::marker { color: var(--accent); }
+  strong { font-weight: 600; }
+  .lede {
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+  }
+  .badge {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    border-radius: 999px;
+    padding: 0.15rem 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.9rem;
+  }
+  footer {
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+    padding-bottom: 2.5rem;
+  }
+  a { color: var(--accent); }
+  @media (max-width: 520px) {
+    .card { padding: 1.4rem 1.2rem; }
+    header h1 { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Règles de confidentialité</h1>
+  <p>Business Sync &amp; Comptabilité — application Android</p>
+</header>
+
+<main>
+
+  <div class="card">
+    <span class="badge">Dernière mise à jour : 14 juillet 2026</span>
+    <p class="lede">Business Sync &amp; Comptabilité est une application de gestion d'activité à <strong>usage strictement personnel</strong>, distribuée uniquement en test interne. Elle n'est pas destinée au grand public et son unique utilisateur est également son développeur. Cette page décrit de manière transparente les données traitées par l'application.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">1</span>Données traitées</h2>
+    <p>L'application traite les catégories de données suivantes, saisies ou synchronisées par l'utilisateur lui-même :</p>
+    <ul>
+      <li><strong>Contacts professionnels</strong> : nom, prénom, coordonnées (e-mail, téléphone), informations client.</li>
+      <li><strong>Données comptables</strong> : écritures, montants, TVA, suivi du temps.</li>
+      <li><strong>Identifiants de connexion aux services tiers</strong> : jetons d'accès aux API configurées par l'utilisateur.</li>
+    </ul>
+    <p>Aucune donnée n'est collectée automatiquement : pas de suivi analytique, pas de publicité, pas de profilage, pas de données de localisation.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">2</span>Stockage des données</h2>
+    <p>Les données sont stockées <strong>localement sur l'appareil</strong> de l'utilisateur. Les informations sensibles (jetons d'accès, identifiants d'API) sont conservées dans le stockage sécurisé et chiffré du système Android (Android Keystore via Expo SecureStore).</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">3</span>Services tiers et synchronisation</h2>
+    <p>À la demande de l'utilisateur, l'application synchronise des données avec des services qu'il a lui-même configurés et dont il détient les comptes :</p>
+    <ul>
+      <li><strong>Google Contacts</strong> (People API) : synchronisation des contacts avec le compte Google de l'utilisateur.</li>
+      <li><strong>Google Sheets</strong> : enregistrement des écritures comptables et du suivi du temps dans les feuilles de calcul de l'utilisateur.</li>
+      <li><strong>GLPi</strong> : synchronisation des contacts avec une instance GLPi privée, auto-hébergée par l'utilisateur sur son propre réseau.</li>
+      <li><strong>Facture.net</strong> : gestion de la facturation via le compte de l'utilisateur.</li>
+    </ul>
+    <p>Les échanges avec les API Google s'effectuent exclusivement en HTTPS. L'utilisation des données issues des API Google respecte les <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Règles relatives aux données utilisateur des services d'API Google</a>, y compris les exigences d'utilisation limitée (<em>Limited Use</em>).</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">4</span>Partage des données</h2>
+    <p><strong>Aucune donnée n'est partagée, vendue ou transmise à des tiers.</strong> Les seuls transferts de données sont ceux initiés par l'utilisateur vers ses propres comptes et services (Google, GLPi, Facture.net). Le développeur n'a accès à aucune donnée d'un quelconque autre utilisateur, l'application étant mono-utilisateur par conception.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">5</span>Suppression des données</h2>
+    <p>L'utilisateur peut à tout moment :</p>
+    <ul>
+      <li>supprimer les données locales en effaçant les données de l'application ou en la désinstallant ;</li>
+      <li>supprimer les données synchronisées directement dans les services concernés (Google Contacts, Google Sheets, GLPi, Facture.net) ;</li>
+      <li>révoquer l'accès de l'application à son compte Google depuis les <a href="https://myaccount.google.com/permissions" rel="noopener">paramètres de sécurité Google</a>.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">6</span>Modifications</h2>
+    <p>Cette politique peut être mise à jour pour refléter l'évolution de l'application. Toute modification sera publiée sur cette page, avec mise à jour de la date indiquée en haut du document.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">7</span>Contact</h2>
+    <p>Pour toute question relative à cette politique de confidentialité, vous pouvez contacter le développeur à l'adresse : <strong>VOTRE-EMAIL@exemple.com</strong></p>
+  </div>
+
+</main>
+
+<footer>
+  Business Sync &amp; Comptabilité — Politique de confidentialité
+</footer>
+
+</body>
+</html>
